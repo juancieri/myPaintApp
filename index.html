@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Mi Aplicación Paint</title>
+        
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="min/main.min.css">
+        
+    </head>
+    <body>
+        
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="logo">Logo</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <form>
+                            <div class="form-group">
+                                <label>Alto:</label>
+                                <input type="number" id="canvasAlto" name="alto" min="1" value="500">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="canvasAncho" name="ancho" min="1" value="500">
+                                <label>Ancho:</label>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" id="botonCanvasSize" name="botonCanvasSize">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-4"></div>
+                    <div class="col-xs-12 col-sm-4"></div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            
+            <!-- COLORES -->
+            <aside class="color-nav">
+                <ul class="color-ul">
+                    <li class="color-li" style="background-color: red;"></li>
+                    <li class="color-li" style="background-color: green;"></li>
+                    <li class="color-li" style="background-color: blue;"></li>
+                </ul>
+            </aside>
+            <!-- /COLORES -->
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <div id="canvas-name">
+                            <div>
+                                Nombre del dibujo <a href="#" id="editNameCanvas">Editar</a>
+                            </div>
+                            <form id="form-name">
+                                <input type="text" name="canvasName" id="newCanvasName">
+                                <button type="button" id="saveCanvasName">Guardar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CANVAS -->
+            <section id="canvas">
+            </section>
+            <!-- /CANVAS -->
+            
+        </main>
+        
+        <footer>
+        </footer>
+        
+        <script src="script.js"></script>
+        
+    </body>
+</html>
